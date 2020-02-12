@@ -16,6 +16,7 @@ pipelines:
             USER: u710970666
             PASSWORD: vpceh25en
             SERVER: '194.5.156.43'
+            PORT: 65002
             REMOTE_PATH: '/home/u710970666/domains/shubhamschahar.com/public_html'
             LOCAL_PATH: 'build'
             # SSH_KEY: $MY_SSH_KEY
