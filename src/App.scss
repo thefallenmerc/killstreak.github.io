@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css?family=Anton|Dosis|Montserrat|Oswald|Questrial|Rajdhani|Teko");
+
+html,
+body {
+  color: white;
+  background-color: #111;
+  overflow-x: hidden;
+  body {
+    padding-bottom: 5rem;
+  }
+  .navbar {
+    font-family: Montserrat, sans-serif;
+    background-color: #111;
+    &.navbar-dark {
+      .navbar-toggler {
+        border: none;
+      }
+    }
+    .navbar-brand,
+    .nav-link {
+      text-transform: uppercase;
+    }
+  }
+}
+
+button:focus {
+  outline: 0px;
+}
+
+hr {
+  border-color: #aaa;
+}
+
+.section {
+  min-height: 100vh;
+  box-sizing: border-box;
+  .section-header {
+    font-size: 3rem;
+    letter-spacing: 0.5rem;
+    font-family: Rajdhani, Oswald, sans-serif;
+  }
+
+  .section-desc {
+    font-family: Montserrat, sans-serif;
+  }
+}
+
+/*cards*/
+.project {
+  /*background-color: #111;*/
+  background-size: 100%;
+  font-family: Rajdhani, Oswald, sans-serif;
+  margin-bottom: 4rem;
+  overflow: hidden;
+  text-align: center;
+  .project-head,
+  .project-link {
+    color: white;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
+  }
+}
+p {
+  font-family: Rajdhani, Oswald, sans-serif;
+}
+/*skills*/
+#skills {
+  text-align: initial;
+}
+
+#skills ul,
+#team ul {
+  list-style: none;
+  padding: 0px;
+  margin-bottom: 0.5rem;
+}
+#skills ul li,
+#team ul li {
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 0.5rem 1rem;
+}
+
+/*footer*/
+.footer {
+  text-align: right;
+  position: fixed;
+  bottom: 0rem;
+  background-color: #111;
+  right: 0px;
+  padding-right: 1rem;
+  .navbar-brand {
+    font-size: 1rem;
+    display: inline-block;
+    color: #555;
+  }
+  ul {
+    display: inline-block;
+    list-style: none;
+    padding: 0px;
+    margin-bottom: 0.5rem;
+    li {
+      cursor: pointer;
+      font-size: 1.5rem;
+      padding: 5px;
+      width: 2rem;
+      text-align: center;
+      display: inline-block;
+      a {
+        color: #aaa;
+        &:hover {
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+/*media query*/
+
+@media only screen and (max-width: 575px) {
+  .nav-link {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+  .navbar-nav {
+    height: 90vh;
+  }
+  .header,
+  .footer {
+    background: #111;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .footer .navbar-brand {
+    margin-right: 0.5rem;
+  }
+}
+
+/*scrolls*/
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-thumb,
+kbd {
+  background: #111;
+}
+::-webkit-scrollbar-track {
+  background: white;
+}
