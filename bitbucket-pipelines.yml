@@ -1,0 +1,21 @@
+# This is a sample build configuration for JavaScript.
+# Check our guides at https://confluence.atlassian.com/x/14UWN for more examples.
+# Only use spaces to indent your .yml configuration.
+# -----
+# You can specify a custom docker image from Docker Hub as your build environment.
+image: php:7.1.29
+
+pipelines:
+  default:
+    - step:
+        caches:
+          - composer
+        script: # Modify the commands below to build your repository.
+          - pipe: atlassian/ftp-deploy:0.3.0
+            variables:
+              USER: u710970666
+              PASSWORD: vpceh25en
+              deployment: hahaha
+              SERVER: 194.5.156.69
+              REMOTE_PATH: '/home/u710970666/domains/shubhamschahar.com/public_html'
+              LOCAL_PATH: '.'
