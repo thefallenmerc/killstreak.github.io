@@ -10,12 +10,13 @@ pipelines:
     - step:
         caches:
           - composer
-        script: # Modify the commands below to build your repository.
-          - pipe: atlassian/ftp-deploy:0.3.0
-            variables:
-              USER: u710970666
-              PASSWORD: vpceh25en
-              deployment: hahaha
-              SERVER: 194.5.156.69
-              REMOTE_PATH: '/home/u710970666/domains/shubhamschahar.com/public_html'
-              LOCAL_PATH: '.'
+        script:
+        - pipe: atlassian/sftp-deploy:0.5.3
+          variables:
+            USER: u710970666
+            PASSWORD: vpceh25en
+            SERVER: '194.5.156.43'
+            REMOTE_PATH: '/home/u710970666/domains/shubhamschahar.com/public_html'
+            LOCAL_PATH: 'build'
+            # SSH_KEY: $MY_SSH_KEY
+            DEBUG: 'true'
