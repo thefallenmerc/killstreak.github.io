@@ -2,7 +2,7 @@
   "name": "mdparser",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://killstreak.github.io",
+  "homepage": "https://thefallenmerc.github.io",
   "dependencies": {
     "axios": "^0.19.0",
     "cra-template": "1.0.0",
