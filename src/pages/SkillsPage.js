@@ -34,10 +34,10 @@ export default function SkillsPage() {
     ];
 
     return (
-        <div id="skills" class="row d-flex section justify-content-center align-items-center">
-            <div class="container text-center flex-fill">
-                <h1 class="section-header text-center p-2">Skills</h1>
-                <div class="section-desc">
+        <div id="skills" className="row d-flex section justify-content-center align-items-center">
+            <div className="container text-center flex-fill">
+                <h1 className="section-header text-center p-2">Skills</h1>
+                <div className="section-desc">
                     <ul>
                         {
                             skills.map((skill, index) => {

@@ -6,7 +6,27 @@ export default function ProjectsPage() {
         {
             title: "Notebook",
             description: "A react based PWA quick notebook that save all data locally.",
-            url: "https://notebook.shubhamschahar.com/"
+            url: "https://thefallenmerc.github.io/notebook"
+        },
+        {
+            title: "Flat React",
+            description: "A react based flat cms that is simple and powerful.",
+            url: "https://thefallenmerc.github.io/notebook"
+        },
+        {
+            title: "Twitter Dark Mode",
+            description: "Implementation of a conceptual design.",
+            url: "https://thefallenmerc.github.io/notebook"
+        },
+        {
+            title: "Yatch Hire",
+            description: "Implementation of a conceptual design in flutter.",
+            url: "https://github.com/thefallenmerc/yatch_hire"
+        },
+        {
+            title: "90 Days",
+            description: "A resolution app made in flutter backed by Laravel.",
+            url: "https://github.com/thefallenmerc/90days-flutter"
         },
     ];
 
@@ -22,7 +42,7 @@ export default function ProjectsPage() {
                                     <div className="project-body">
                                         <h4 className="project-head">{project.title}</h4>
                                         <p className="project-details">{project.description}</p>
-                                        <a href={project.url} className="project-link">Check it out <i className="fa fa-angle-right" /></a>
+                                        <a href={project.url} rel="noopener noreferrer" target="_blank" className="project-link">Check it out <i className="fa fa-angle-right" /></a>
                                     </div>
                                 </div>
                             );

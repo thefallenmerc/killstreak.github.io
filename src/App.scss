@@ -149,3 +149,47 @@ kbd {
 ::-webkit-scrollbar-track {
   background: white;
 }
+
+
+.happy-birthday {
+  background-color: red;
+  .navbar {
+    background-color: red;
+  }
+  .footer {
+    background-color: red;
+    .navbar-brand {
+      color: rgba(255, 255, 255, 0.75);
+    }
+    ul {
+      li {
+        a {
+          color: rgba(255, 255, 255, 0.75);
+          &:hover {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
+
+.birthday-wish {
+  line-height: 5rem;
+}
+
+.section {
+  a {
+    color: white;
+    text-decoration: underline;
+    &:hover {
+      color: white;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .birthday-wish {
+    font-size: 2rem;
+  }
+}
