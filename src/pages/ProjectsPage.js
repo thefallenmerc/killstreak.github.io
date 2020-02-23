@@ -28,6 +28,11 @@ export default function ProjectsPage() {
             description: "A resolution app made in flutter backed by Laravel.",
             url: "https://github.com/thefallenmerc/90days-flutter"
         },
+        {
+            title: "Flutter Binary Clock",
+            description: "A binary clock made in flutter.",
+            url: "https://github.com/thefallenmerc/flutter-binary-clock"
+        },
     ];
 
     return (
